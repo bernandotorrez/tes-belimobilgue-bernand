@@ -28,10 +28,10 @@ const Index = props => (
           opacity: 0.6;
         }
       `}</style>
-    <h1>Article List</h1>
+    <h1>Techlogy News</h1>
     <ul>
       {props.shows.map(show => (
-        <li key={show.title}>
+        <li key={show.url}>
           <Link href={`/post?id=${show.url}`}>
             <a>{show.title}</a>
           </Link>

@@ -31,21 +31,23 @@ const Post = props => (
           opacity: 0.6;
         }
       `}</style>
-    <h1>{props.show.response.docs[0].web_url}</h1>
-    <p>{props.show.summary}</p>
-    <img src={props.show.image.medium} />
+    <h1>{props.show_res.headline.main}</h1>
+    <p>{props.show_res.snippet}</p>
+    <p>{props.show_res.lead_paragraph}</p>
+    <img src={'https://static01.nyt.com/'+props.show_res.multimedia[0].url} />
   </Layout>
 );
 
 Post.getInitialProps = async function(context) {
   const { id } = context.query;
-  
+  console.log(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=web_url:("${id}")&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa`)
   const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=web_url:("${id}")&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa`);
   const show = await res.json();
 
-  console.log(`Fetched show: ${show.response.docs[0].web_url}`);
+  var show_res = show.response.docs[0]
+  console.log(`Fetched show: ${show_res.headline.main}`);
 
-  return { show };
+  return { show_res };
 };
 
 export default Post;
