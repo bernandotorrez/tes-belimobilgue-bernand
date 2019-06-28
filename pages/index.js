@@ -1,12 +1,31 @@
 import Layout from '../components/MyLayout.js';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
+import React, { Component } from 'react';
 
-const Index = props => (
-  <Layout>
+class Index extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      data: [],
+      loading: true,
+      search: ''
+    }
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  render() {
+    return (
+      <div>
+      <Layout>
        <style jsx>{`
         h1,
         a {
+          font-family: 'Arial';
+        }
+
+        p {
           font-family: 'Arial';
         }
 
@@ -28,33 +47,87 @@ const Index = props => (
           opacity: 0.6;
         }
       `}</style>
-    <h1>Techlogy News</h1>
+    <h1><u>Technology News</u></h1>
+
+    <p>
+    <form onSubmit={this.handleSubmit}>
+      <label>
+        Search : 
+        <input type="text" name="search" value={this.state.search} onChange={this.handleChange} />
+      </label>
+      <input type="submit" value="Submit" />
+      </form>
+    </p>
+
     <ul>
-      {props.shows.map(show => (
-        <li key={show.url}>
-          <Link href={`/post?id=${show.url}`}>
-            <a>{show.title}</a>
+      {this.state.data.map(show => (
+        <li key={show.web_url}>
+          <Link href={`/post?id=${show.web_url}`}>
+            <a>{show.headline.main}</a>
           </Link>
         </li>
       ))}
     </ul>
   </Layout>
-);
+  </div>
+    )
+  }
 
-Index.getInitialProps = async function() {
-  const res = await fetch('https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=D63Kg6LvRgmGqWlhOInQqrAEFvfQ2FEj');
+  componentDidMount() {
+    this.getNewsData();
+  }
+
+  handleSubmit(event) {
+    this.getSearchNews()
+    event.preventDefault();
+  }
+
+  handleChange(event) {
+    this.setState({search: event.target.value});
+  }
+
+  async getSearchNews(){
+    try {
+      
+      this.setState({
+        data: []
+      })
+
+      const { search } = this.state;
   
-  const data = await res.json();
+      //const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=web_url:("${id}")&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa`);
+      const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${search}&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa`);
+      const show = await res.json();
 
-  var data_res = data.results;
+      var show_res = show.response.docs
+      this.setState({
+        data: show_res
+      })
+    } catch(e){
+      console.log(e)
+    }
+    
+  }
 
-  console.log(`Show data fetched. Count: ${data_res.length}`);
+  async getNewsData() {
+    try {
+      
+      const res = await fetch('https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=section_name:(%22Technology%22)&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa');
+      //const res = await fetch('https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=D63Kg6LvRgmGqWlhOInQqrAEFvfQ2FEj');
+  
+      const data = await res.json();
 
-  return {
-    shows: data_res.map(entry => 
-        entry
-        )
-  };
-};
+      var data_res = data.response.docs;
+
+      this.setState({
+        data: data_res
+      })
+
+    } catch(e) {
+        console.log(e)
+    }
+  }
+
+}
 
 export default Index;
