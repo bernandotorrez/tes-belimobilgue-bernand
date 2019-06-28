@@ -1,6 +1,12 @@
 import Layout from '../components/MyLayout.js';
 import fetch from 'isomorphic-unfetch';
 
+const imgStyle = {
+  width: '100%',
+  height: 'auto',
+  maxWidth: '400px'
+}
+
 const Post = props => (
   <Layout>
       <style jsx>{`
@@ -37,7 +43,7 @@ const Post = props => (
     <p>{props.snippet}</p>
     <p>{props.paragraph}</p>
     
-    <img src={props.image} />
+    <img src={props.image} style={imgStyle}/>
   </Layout>
 );
 
