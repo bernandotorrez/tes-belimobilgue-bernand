@@ -8,7 +8,6 @@ class Index extends Component {
     super(props)
     this.state = {
       data: [],
-      loading: true,
       search: ''
     }
     this.handleChange = this.handleChange.bind(this);
@@ -16,6 +15,7 @@ class Index extends Component {
   }
 
   render() {
+    
     return (
       <div>
       <Layout>
@@ -62,7 +62,7 @@ class Index extends Component {
     <ul>
       {this.state.data.map(show => (
         <li key={show.web_url}>
-          <Link href={`/post?id=${show.web_url}`}>
+          <Link href={`/news?id=${show.web_url}`}>
             <a>{show.headline.main}</a>
           </Link>
         </li>
@@ -89,6 +89,7 @@ class Index extends Component {
   async getSearchNews(){
     try {
       
+      // Kosongkan state data
       this.setState({
         data: []
       })
@@ -96,10 +97,12 @@ class Index extends Component {
       const { search } = this.state;
   
       //const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=web_url:("${id}")&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa`);
-      const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${search}&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa`);
+      const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=section_name:("Technology")&q=${search}&fq=&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa`);
       const show = await res.json();
 
       var show_res = show.response.docs
+
+      // Isi state data
       this.setState({
         data: show_res
       })
@@ -112,7 +115,7 @@ class Index extends Component {
   async getNewsData() {
     try {
       
-      const res = await fetch('https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=section_name:(%22Technology%22)&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa');
+      const res = await fetch('https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=section_name:("Technology")&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa');
       //const res = await fetch('https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=D63Kg6LvRgmGqWlhOInQqrAEFvfQ2FEj');
   
       const data = await res.json();

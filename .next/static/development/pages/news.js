@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\news.js"],{
 
 /***/ "./components/Header.js":
 /*!******************************!*\
@@ -358,26 +358,6 @@ function _arrayWithHoles(arr) {
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js ***!
-  \**********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _assertThisInitialized; });
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js":
 /*!*****************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js ***!
@@ -481,63 +461,6 @@ function _createClass(Constructor, protoProps, staticProps) {
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _getPrototypeOf; });
-/* harmony import */ var _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-prototype-of */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js");
-/* harmony import */ var _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/set-prototype-of */ "./node_modules/@babel/runtime-corejs2/core-js/object/set-prototype-of.js");
-/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1__);
-
-
-function _getPrototypeOf(o) {
-  _getPrototypeOf = _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1___default.a ? _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0___default.a : function _getPrototypeOf(o) {
-    return o.__proto__ || _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0___default()(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js ***!
-  \*********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _inherits; });
-/* harmony import */ var _core_js_object_create__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/create */ "./node_modules/@babel/runtime-corejs2/core-js/object/create.js");
-/* harmony import */ var _core_js_object_create__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_create__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./setPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js");
-
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = _core_js_object_create__WEBPACK_IMPORTED_MODULE_0___default()(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) Object(_setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__["default"])(subClass, superClass);
-}
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js":
 /*!*********************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js ***!
@@ -595,54 +518,6 @@ function _nonIterableRest() {
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js":
-/*!**************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js ***!
-  \**************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _possibleConstructorReturn; });
-/* harmony import */ var _helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/esm/typeof */ "./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js");
-/* harmony import */ var _assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (Object(_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return Object(_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__["default"])(self);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _setPrototypeOf; });
-/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/set-prototype-of */ "./node_modules/@babel/runtime-corejs2/core-js/object/set-prototype-of.js");
-/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0__);
-
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0___default.a || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js":
 /*!**************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js ***!
@@ -661,41 +536,6 @@ __webpack_require__.r(__webpack_exports__);
 
 function _slicedToArray(arr, i) {
   return Object(_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__["default"])(arr, i) || Object(_nonIterableRest__WEBPACK_IMPORTED_MODULE_2__["default"])();
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _typeof; });
-/* harmony import */ var _core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/symbol/iterator */ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js");
-/* harmony import */ var _core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _core_js_symbol__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
-/* harmony import */ var _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_symbol__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-function _typeof2(obj) { if (typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && typeof _core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0___default.a === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && obj.constructor === _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a && obj !== _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
-
-function _typeof(obj) {
-  if (typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && _typeof2(_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0___default.a) === "symbol") {
-    _typeof = function _typeof(obj) {
-      return _typeof2(obj);
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && obj.constructor === _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a && obj !== _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a.prototype ? "symbol" : _typeof2(obj);
-    };
-  }
-
-  return _typeof(obj);
 }
 
 /***/ }),
@@ -5640,21 +5480,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=E%3A%5CProgramming%5Ctes-belimobilgue-bernand%5Cpages%5Cindex.js!./":
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=E%3A%5CProgramming%5Ctes-belimobilgue-bernand%5Cpages%5Cindex.js ***!
-  \*****************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnews&absolutePagePath=E%3A%5CProgramming%5Ctes-belimobilgue-bernand%5Cpages%5Cnews.js!./":
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnews&absolutePagePath=E%3A%5CProgramming%5Ctes-belimobilgue-bernand%5Cpages%5Cnews.js ***!
+  \********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var page = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/news", function() {
+      var page = __webpack_require__(/*! ./pages/news.js */ "./pages/news.js")
       if(true) {
-        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
-          next.router.update("/", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/news.js */ "./pages/news.js", function() {
+          if(!next.router.components["/news"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/news.js */ "./pages/news.js")
+          next.router.update("/news", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -10857,10 +10697,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/news.js":
+/*!***********************!*\
+  !*** ./pages/news.js ***!
+  \***********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10869,21 +10709,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
@@ -10891,210 +10723,87 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var Post = function Post(props) {
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    id: "2251713545"
+  }, "h1.jsx-2251713545,a.jsx-2251713545{font-family:'Arial';}p.jsx-2251713545{font-family:'Arial';}ul.jsx-2251713545{padding:0;}li.jsx-2251713545{list-style:none;margin:5px 0;}a.jsx-2251713545{-webkit-text-decoration:none;text-decoration:none;color:blue;}a.jsx-2251713545:hover{opacity:0.6;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkU6XFxQcm9ncmFtbWluZ1xcdGVzLWJlbGltb2JpbGd1ZS1iZXJuYW5kXFxwYWdlc1xcbmV3cy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFLa0IsQUFJK0IsQUFJRSxBQUlaLEFBSU0sQUFLSyxBQUtULFVBYmQsRUFjQSxJQVZlLElBWmYsQUFJQSxTQVNBLHFCQUlhLFdBQ2IiLCJmaWxlIjoiRTpcXFByb2dyYW1taW5nXFx0ZXMtYmVsaW1vYmlsZ3VlLWJlcm5hbmRcXHBhZ2VzXFxuZXdzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExheW91dCBmcm9tICcuLi9jb21wb25lbnRzL015TGF5b3V0LmpzJztcclxuaW1wb3J0IGZldGNoIGZyb20gJ2lzb21vcnBoaWMtdW5mZXRjaCc7XHJcblxyXG5jb25zdCBQb3N0ID0gcHJvcHMgPT4gKFxyXG4gIDxMYXlvdXQ+XHJcbiAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICBoMSxcclxuICAgICAgICBhIHtcclxuICAgICAgICAgIGZvbnQtZmFtaWx5OiAnQXJpYWwnO1xyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgcCB7XHJcbiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiAnQXJpYWwnO1xyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgdWwge1xyXG4gICAgICAgICAgcGFkZGluZzogMDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIGxpIHtcclxuICAgICAgICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbiAgICAgICAgICBtYXJnaW46IDVweCAwO1xyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgYSB7XHJcbiAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgICAgICAgICBjb2xvcjogYmx1ZTtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIGE6aG92ZXIge1xyXG4gICAgICAgICAgb3BhY2l0eTogMC42O1xyXG4gICAgICAgIH1cclxuICAgICAgYH08L3N0eWxlPlxyXG5cclxuICAgIHsvKiBUYW1waWxrYW4gQmVyaXRhICovfVxyXG4gICAgPGgxPntwcm9wcy5oZWFkbGluZX08L2gxPlxyXG4gICAgPHA+e3Byb3BzLnNuaXBwZXR9PC9wPlxyXG4gICAgPHA+e3Byb3BzLnBhcmFncmFwaH08L3A+XHJcbiAgICBcclxuICAgIDxpbWcgc3JjPXtwcm9wcy5pbWFnZX0gLz5cclxuICA8L0xheW91dD5cclxuKTtcclxuXHJcblBvc3QuZ2V0SW5pdGlhbFByb3BzID0gYXN5bmMgZnVuY3Rpb24oY29udGV4dCkge1xyXG4gIGNvbnN0IHsgaWQgfSA9IGNvbnRleHQucXVlcnk7XHJcbiAgXHJcbiAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goYGh0dHBzOi8vYXBpLm55dGltZXMuY29tL3N2Yy9zZWFyY2gvdjIvYXJ0aWNsZXNlYXJjaC5qc29uP2ZxPXdlYl91cmw6KFwiJHtpZH1cIikmYXBpLWtleT1XRDlvclBONmZtV1NZbUdqSGFad25ad1c3OUNhMDZ4YWApO1xyXG4gIGNvbnN0IHNob3cgPSBhd2FpdCByZXMuanNvbigpO1xyXG5cclxuICB2YXIgc2hvd19yZXMgPSBzaG93LnJlc3BvbnNlLmRvY3NbMF1cclxuICBjb25zb2xlLmxvZyhgRmV0Y2hlZCBzaG93OiAke3Nob3dfcmVzLmhlYWRsaW5lLm1haW59YCk7XHJcblxyXG4gIHZhciBoZWFkbGluZSA9IHNob3dfcmVzLmhlYWRsaW5lLm1haW47XHJcbiAgdmFyIHNuaXBwZXQgPSBzaG93X3Jlcy5zbmlwcGV0O1xyXG4gIHZhciBwYXJhZ3JhcGggPSBzaG93X3Jlcy5sZWFkX3BhcmFncmFwaDtcclxuICBcclxuICAvLyBjZWsgYXBha2FoIGFkYSBpbWFnZW55YSBhdGF1IHRpZGFrXHJcbiAgaWYoc2hvd19yZXMubXVsdGltZWRpYSA9PSAnJyB8fCAhc2hvd19yZXMubXVsdGltZWRpYSkge1xyXG4gICAgdmFyIGltYWdlID0gJ2h0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvYS9hYy9Ob19pbWFnZV9hdmFpbGFibGUuc3ZnJztcclxuICB9IGVsc2Uge1xyXG4gICAgdmFyIGltYWdlID0gYGh0dHBzOi8vc3RhdGljMDEubnl0LmNvbS8ke3Nob3dfcmVzLm11bHRpbWVkaWFbMF0udXJsfWA7XHJcbiAgfVxyXG5cclxuICByZXR1cm4geyBcclxuICAgIGhlYWRsaW5lOiBoZWFkbGluZSxcclxuICAgIHNuaXBwZXQ6IHNuaXBwZXQsXHJcbiAgICBwYXJhZ3JhcGg6IHBhcmFncmFwaCxcclxuICAgIGltYWdlOiBpbWFnZVxyXG4gICB9O1xyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgUG9zdDsiXX0= */\n/*@ sourceURL=E:\\Programming\\tes-belimobilgue-bernand\\pages\\news.js */"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h1", {
+    className: "jsx-2251713545"
+  }, props.headline), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
+    className: "jsx-2251713545"
+  }, props.snippet), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
+    className: "jsx-2251713545"
+  }, props.paragraph), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
+    src: props.image,
+    className: "jsx-2251713545"
+  }));
+};
 
-
-
-
-
-
-
-var Index =
+Post.getInitialProps =
 /*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(Index, _Component);
+function () {
+  var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  /*#__PURE__*/
+  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(context) {
+    var id, res, show, show_res, headline, snippet, paragraph, image;
+    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            id = context.query.id;
+            _context.next = 3;
+            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()("https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=web_url:(\"".concat(id, "\")&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa"));
 
-  function Index(props) {
-    var _this;
+          case 3:
+            res = _context.sent;
+            _context.next = 6;
+            return res.json();
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Index);
+          case 6:
+            show = _context.sent;
+            show_res = show.response.docs[0];
+            console.log("Fetched show: ".concat(show_res.headline.main));
+            headline = show_res.headline.main;
+            snippet = show_res.snippet;
+            paragraph = show_res.lead_paragraph; // cek apakah ada imagenya atau tidak
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Index).call(this, props));
-    _this.state = {
-      data: [],
-      search: ''
-    };
-    _this.handleChange = _this.handleChange.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
-    _this.handleSubmit = _this.handleSubmit.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Index, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_9__["default"], null, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        id: "2034263189"
-      }, "h1.jsx-2034263189,a.jsx-2034263189{font-family:'Arial';}p.jsx-2034263189{font-family:'Arial';}ul.jsx-2034263189{padding:0;}li.jsx-2034263189{list-style:none;margin:5px 0;}a.jsx-2034263189{-webkit-text-decoration:none;text-decoration:none;color:blue;}a.jsx-2034263189:hover{opacity:0.6;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkU6XFxQcm9ncmFtbWluZ1xcdGVzLWJlbGltb2JpbGd1ZS1iZXJuYW5kXFxwYWdlc1xcaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUJtQixBQUkrQixBQUlBLEFBSVYsQUFJTSxBQUtLLEFBS1QsVUFiZCxFQWNBLElBVmUsSUFaZixBQUlBLFNBU0EscUJBSWEsV0FDYiIsImZpbGUiOiJFOlxcUHJvZ3JhbW1pbmdcXHRlcy1iZWxpbW9iaWxndWUtYmVybmFuZFxccGFnZXNcXGluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExheW91dCBmcm9tICcuLi9jb21wb25lbnRzL015TGF5b3V0LmpzJztcclxuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJztcclxuaW1wb3J0IGZldGNoIGZyb20gJ2lzb21vcnBoaWMtdW5mZXRjaCc7XHJcbmltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tICdyZWFjdCc7XHJcblxyXG5jbGFzcyBJbmRleCBleHRlbmRzIENvbXBvbmVudCB7XHJcbiAgY29uc3RydWN0b3IocHJvcHMpIHtcclxuICAgIHN1cGVyKHByb3BzKVxyXG4gICAgdGhpcy5zdGF0ZSA9IHtcclxuICAgICAgZGF0YTogW10sXHJcbiAgICAgIHNlYXJjaDogJydcclxuICAgIH1cclxuICAgIHRoaXMuaGFuZGxlQ2hhbmdlID0gdGhpcy5oYW5kbGVDaGFuZ2UuYmluZCh0aGlzKTtcclxuICAgIHRoaXMuaGFuZGxlU3VibWl0ID0gdGhpcy5oYW5kbGVTdWJtaXQuYmluZCh0aGlzKTtcclxuICB9XHJcblxyXG4gIHJlbmRlcigpIHtcclxuICAgIFxyXG4gICAgcmV0dXJuIChcclxuICAgICAgPGRpdj5cclxuICAgICAgPExheW91dD5cclxuICAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICBoMSxcclxuICAgICAgICBhIHtcclxuICAgICAgICAgIGZvbnQtZmFtaWx5OiAnQXJpYWwnO1xyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgcCB7XHJcbiAgICAgICAgICBmb250LWZhbWlseTogJ0FyaWFsJztcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIHVsIHtcclxuICAgICAgICAgIHBhZGRpbmc6IDA7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICBsaSB7XHJcbiAgICAgICAgICBsaXN0LXN0eWxlOiBub25lO1xyXG4gICAgICAgICAgbWFyZ2luOiA1cHggMDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIGEge1xyXG4gICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gICAgICAgICAgY29sb3I6IGJsdWU7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICBhOmhvdmVyIHtcclxuICAgICAgICAgIG9wYWNpdHk6IDAuNjtcclxuICAgICAgICB9XHJcbiAgICAgIGB9PC9zdHlsZT5cclxuICAgIDxoMT48dT5UZWNobm9sb2d5IE5ld3M8L3U+PC9oMT5cclxuXHJcbiAgICA8cD5cclxuICAgIDxmb3JtIG9uU3VibWl0PXt0aGlzLmhhbmRsZVN1Ym1pdH0+XHJcbiAgICAgIDxsYWJlbD5cclxuICAgICAgICBTZWFyY2ggOiBcclxuICAgICAgICA8aW5wdXQgdHlwZT1cInRleHRcIiBuYW1lPVwic2VhcmNoXCIgdmFsdWU9e3RoaXMuc3RhdGUuc2VhcmNofSBvbkNoYW5nZT17dGhpcy5oYW5kbGVDaGFuZ2V9IC8+XHJcbiAgICAgIDwvbGFiZWw+XHJcbiAgICAgIDxpbnB1dCB0eXBlPVwic3VibWl0XCIgdmFsdWU9XCJTdWJtaXRcIiAvPlxyXG4gICAgICA8L2Zvcm0+XHJcbiAgICA8L3A+XHJcblxyXG4gICAgPHVsPlxyXG4gICAgICB7dGhpcy5zdGF0ZS5kYXRhLm1hcChzaG93ID0+IChcclxuICAgICAgICA8bGkga2V5PXtzaG93LndlYl91cmx9PlxyXG4gICAgICAgICAgPExpbmsgaHJlZj17YC9uZXdzP2lkPSR7c2hvdy53ZWJfdXJsfWB9PlxyXG4gICAgICAgICAgICA8YT57c2hvdy5oZWFkbGluZS5tYWlufTwvYT5cclxuICAgICAgICAgIDwvTGluaz5cclxuICAgICAgICA8L2xpPlxyXG4gICAgICApKX1cclxuICAgIDwvdWw+XHJcbiAgPC9MYXlvdXQ+XHJcbiAgPC9kaXY+XHJcbiAgICApXHJcbiAgfVxyXG5cclxuICBjb21wb25lbnREaWRNb3VudCgpIHtcclxuICAgIHRoaXMuZ2V0TmV3c0RhdGEoKTtcclxuICB9XHJcblxyXG4gIGhhbmRsZVN1Ym1pdChldmVudCkge1xyXG4gICAgdGhpcy5nZXRTZWFyY2hOZXdzKClcclxuICAgIGV2ZW50LnByZXZlbnREZWZhdWx0KCk7XHJcbiAgfVxyXG5cclxuICBoYW5kbGVDaGFuZ2UoZXZlbnQpIHtcclxuICAgIHRoaXMuc2V0U3RhdGUoe3NlYXJjaDogZXZlbnQudGFyZ2V0LnZhbHVlfSk7XHJcbiAgfVxyXG5cclxuICBhc3luYyBnZXRTZWFyY2hOZXdzKCl7XHJcbiAgICB0cnkge1xyXG4gICAgICBcclxuICAgICAgLy8gS29zb25na2FuIHN0YXRlIGRhdGFcclxuICAgICAgdGhpcy5zZXRTdGF0ZSh7XHJcbiAgICAgICAgZGF0YTogW11cclxuICAgICAgfSlcclxuXHJcbiAgICAgIGNvbnN0IHsgc2VhcmNoIH0gPSB0aGlzLnN0YXRlO1xyXG4gIFxyXG4gICAgICAvL2NvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGBodHRwczovL2FwaS5ueXRpbWVzLmNvbS9zdmMvc2VhcmNoL3YyL2FydGljbGVzZWFyY2guanNvbj9mcT13ZWJfdXJsOihcIiR7aWR9XCIpJmFwaS1rZXk9V0Q5b3JQTjZmbVdTWW1HakhhWnduWndXNzlDYTA2eGFgKTtcclxuICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goYGh0dHBzOi8vYXBpLm55dGltZXMuY29tL3N2Yy9zZWFyY2gvdjIvYXJ0aWNsZXNlYXJjaC5qc29uP2ZxPXNlY3Rpb25fbmFtZTooXCJUZWNobm9sb2d5XCIpJnE9JHtzZWFyY2h9JmZxPSZhcGkta2V5PVdEOW9yUE42Zm1XU1ltR2pIYVp3blp3Vzc5Q2EwNnhhYCk7XHJcbiAgICAgIGNvbnN0IHNob3cgPSBhd2FpdCByZXMuanNvbigpO1xyXG5cclxuICAgICAgdmFyIHNob3dfcmVzID0gc2hvdy5yZXNwb25zZS5kb2NzXHJcblxyXG4gICAgICAvLyBJc2kgc3RhdGUgZGF0YVxyXG4gICAgICB0aGlzLnNldFN0YXRlKHtcclxuICAgICAgICBkYXRhOiBzaG93X3Jlc1xyXG4gICAgICB9KVxyXG4gICAgfSBjYXRjaChlKXtcclxuICAgICAgY29uc29sZS5sb2coZSlcclxuICAgIH1cclxuICAgIFxyXG4gIH1cclxuXHJcbiAgYXN5bmMgZ2V0TmV3c0RhdGEoKSB7XHJcbiAgICB0cnkge1xyXG4gICAgICBcclxuICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goJ2h0dHBzOi8vYXBpLm55dGltZXMuY29tL3N2Yy9zZWFyY2gvdjIvYXJ0aWNsZXNlYXJjaC5qc29uP2ZxPXNlY3Rpb25fbmFtZTooXCJUZWNobm9sb2d5XCIpJmFwaS1rZXk9V0Q5b3JQTjZmbVdTWW1HakhhWnduWndXNzlDYTA2eGEnKTtcclxuICAgICAgLy9jb25zdCByZXMgPSBhd2FpdCBmZXRjaCgnaHR0cHM6Ly9hcGkubnl0aW1lcy5jb20vc3ZjL3RvcHN0b3JpZXMvdjIvdGVjaG5vbG9neS5qc29uP2FwaS1rZXk9RDYzS2c2THZSZ21HcVdsaE9JblFxckFFRnZmUTJGRWonKTtcclxuICBcclxuICAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7XHJcblxyXG4gICAgICB2YXIgZGF0YV9yZXMgPSBkYXRhLnJlc3BvbnNlLmRvY3M7XHJcblxyXG4gICAgICB0aGlzLnNldFN0YXRlKHtcclxuICAgICAgICBkYXRhOiBkYXRhX3Jlc1xyXG4gICAgICB9KVxyXG5cclxuICAgIH0gY2F0Y2goZSkge1xyXG4gICAgICAgIGNvbnNvbGUubG9nKGUpXHJcbiAgICB9XHJcbiAgfVxyXG5cclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgSW5kZXg7Il19 */\n/*@ sourceURL=E:\\Programming\\tes-belimobilgue-bernand\\pages\\index.js */"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h1", {
-        className: "jsx-2034263189"
-      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("u", {
-        className: "jsx-2034263189"
-      }, "Technology News")), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("p", {
-        className: "jsx-2034263189"
-      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("form", {
-        onSubmit: this.handleSubmit,
-        className: "jsx-2034263189"
-      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("label", {
-        className: "jsx-2034263189"
-      }, "Search :", react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("input", {
-        type: "text",
-        name: "search",
-        value: this.state.search,
-        onChange: this.handleChange,
-        className: "jsx-2034263189"
-      })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("input", {
-        type: "submit",
-        value: "Submit",
-        className: "jsx-2034263189"
-      }))), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("ul", {
-        className: "jsx-2034263189"
-      }, this.state.data.map(function (show) {
-        return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("li", {
-          key: show.web_url,
-          className: "jsx-2034263189"
-        }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
-          href: "/news?id=".concat(show.web_url)
-        }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
-          className: "jsx-2034263189"
-        }, show.headline.main)));
-      }))));
-    }
-  }, {
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.getNewsData();
-    }
-  }, {
-    key: "handleSubmit",
-    value: function handleSubmit(event) {
-      this.getSearchNews();
-      event.preventDefault();
-    }
-  }, {
-    key: "handleChange",
-    value: function handleChange(event) {
-      this.setState({
-        search: event.target.value
-      });
-    }
-  }, {
-    key: "getSearchNews",
-    value: function () {
-      var _getSearchNews = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
-      /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var search, res, show, show_res;
-        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.prev = 0;
-                // Kosongkan state data
-                this.setState({
-                  data: []
-                });
-                search = this.state.search; //const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=web_url:("${id}")&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa`);
-
-                _context.next = 5;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_11___default()("https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=section_name:(\"Technology\")&q=".concat(search, "&fq=&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa"));
-
-              case 5:
-                res = _context.sent;
-                _context.next = 8;
-                return res.json();
-
-              case 8:
-                show = _context.sent;
-                show_res = show.response.docs; // Isi state data
-
-                this.setState({
-                  data: show_res
-                });
-                _context.next = 16;
-                break;
-
-              case 13:
-                _context.prev = 13;
-                _context.t0 = _context["catch"](0);
-                console.log(_context.t0);
-
-              case 16:
-              case "end":
-                return _context.stop();
+            if (show_res.multimedia == '' || !show_res.multimedia) {
+              image = 'https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg';
+            } else {
+              image = "https://static01.nyt.com/".concat(show_res.multimedia[0].url);
             }
-          }
-        }, _callee, this, [[0, 13]]);
-      }));
 
-      function getSearchNews() {
-        return _getSearchNews.apply(this, arguments);
+            return _context.abrupt("return", {
+              headline: headline,
+              snippet: snippet,
+              paragraph: paragraph,
+              image: image
+            });
+
+          case 14:
+          case "end":
+            return _context.stop();
+        }
       }
+    }, _callee);
+  }));
 
-      return getSearchNews;
-    }()
-  }, {
-    key: "getNewsData",
-    value: function () {
-      var _getNewsData = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
-      /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
-        var res, data, data_res;
-        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
-          while (1) {
-            switch (_context2.prev = _context2.next) {
-              case 0:
-                _context2.prev = 0;
-                _context2.next = 3;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_11___default()('https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=section_name:("Technology")&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa');
+  return function (_x) {
+    return _ref.apply(this, arguments);
+  };
+}();
 
-              case 3:
-                res = _context2.sent;
-                _context2.next = 6;
-                return res.json();
-
-              case 6:
-                data = _context2.sent;
-                data_res = data.response.docs;
-                this.setState({
-                  data: data_res
-                });
-                _context2.next = 14;
-                break;
-
-              case 11:
-                _context2.prev = 11;
-                _context2.t0 = _context2["catch"](0);
-                console.log(_context2.t0);
-
-              case 14:
-              case "end":
-                return _context2.stop();
-            }
-          }
-        }, _callee2, this, [[0, 11]]);
-      }));
-
-      function getNewsData() {
-        return _getNewsData.apply(this, arguments);
-      }
-
-      return getNewsData;
-    }()
-  }]);
-
-  return Index;
-}(react__WEBPACK_IMPORTED_MODULE_12__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (Post);
 
 /***/ }),
 
-/***/ 1:
-/*!*********************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=E%3A%5CProgramming%5Ctes-belimobilgue-bernand%5Cpages%5Cindex.js ***!
-  \*********************************************************************************************************************************/
+/***/ 2:
+/*!************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fnews&absolutePagePath=E%3A%5CProgramming%5Ctes-belimobilgue-bernand%5Cpages%5Cnews.js ***!
+  \************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=E%3A%5CProgramming%5Ctes-belimobilgue-bernand%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=E%3A%5CProgramming%5Ctes-belimobilgue-bernand%5Cpages%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fnews&absolutePagePath=E%3A%5CProgramming%5Ctes-belimobilgue-bernand%5Cpages%5Cnews.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnews&absolutePagePath=E%3A%5CProgramming%5Ctes-belimobilgue-bernand%5Cpages%5Cnews.js!./");
 
 
 /***/ }),
@@ -11110,5 +10819,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=index.js.map
+},[[2,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=news.js.map

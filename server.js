@@ -14,11 +14,11 @@ app
       return handle(req, res);
     });
 
-    server.get('/article', (req, res) => {
-        const actualPage = '/post';
-        const queryParams = { id: req.query.id};
-        app.render(req, res, actualPage, queryParams);
-      });
+    // server.get('/news', (req, res) => {
+    //     const actualPage = '/news';
+    //     const queryParams = { id: req.query.id};
+    //     app.render(req, res, actualPage, queryParams);
+    //   });
 
     server.listen(3000, err => {
       if (err) throw err;
