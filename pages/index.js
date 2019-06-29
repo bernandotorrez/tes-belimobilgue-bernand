@@ -8,7 +8,8 @@ class Index extends Component {
     super(props)
     this.state = {
       data: [],
-      search: ''
+      search: '',
+      loading: 'Getting Data...'
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -58,7 +59,7 @@ class Index extends Component {
       <input type="submit" value="Submit" />
       </form>
     </p>
-
+<p> {this.state.loading}</p>
     {/* Looping Data */}
     <ul>
       {this.state.data.map(show => (
@@ -92,20 +93,22 @@ class Index extends Component {
       
       // Kosongkan state data
       this.setState({
-        data: []
+        data: [],
+        loading: 'Searching...'
       })
 
       const { search } = this.state;
   
       //const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=web_url:("${id}")&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa`);
-      const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=section_name:("Technology")&q=${search}&fq=&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa`);
+      const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fl=web_url,headline&fq=section_name:("Technology")&q=${search}&fq=&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa`);
       const show = await res.json();
 
       var show_res = show.response.docs
 
       // Isi state data
       this.setState({
-        data: show_res
+        data: show_res,
+        loading: ''
       })
     } catch(e){
       console.log(e)
@@ -116,7 +119,7 @@ class Index extends Component {
   async getNewsData() {
     try {
       
-      const res = await fetch('https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=section_name:("Technology")&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa');
+      const res = await fetch('https://api.nytimes.com/svc/search/v2/articlesearch.json?fl=web_url,headline&fq=section_name:(%22Technology%22)&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa');
       //const res = await fetch('https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=D63Kg6LvRgmGqWlhOInQqrAEFvfQ2FEj');
   
       const data = await res.json();
@@ -124,7 +127,8 @@ class Index extends Component {
       var data_res = data.response.docs;
 
       this.setState({
-        data: data_res
+        data: data_res,
+        loading: ''
       })
 
     } catch(e) {

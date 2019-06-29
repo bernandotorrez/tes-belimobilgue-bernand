@@ -6671,7 +6671,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "E:\\Programming\\tes-belimobilgue-bernand\\.next");
+      source_map_support_1.rewriteStacktrace(error, "F:\\source belajar ngoding\\belimobilgue-next\\.next");
       return error;
     }
   };

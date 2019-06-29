@@ -50,7 +50,7 @@ const Post = props => (
 Post.getInitialProps = async function(context) {
   const { id } = context.query;
   
-  const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=web_url:("${id}")&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa`);
+  const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fl=headline, snippet, lead_paragraph, multimedia&fq=web_url:("${id}")&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa`);
   const show = await res.json();
 
   var show_res = show.response.docs[0]
