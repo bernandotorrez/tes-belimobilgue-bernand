@@ -42,7 +42,7 @@ const Post = props => (
     <h1>{props.headline}</h1>
     <p>{props.snippet}</p>
     <p>{props.paragraph}</p>
-    
+    {/* Tampilkan Gambar Berita */}
     <img src={props.image} style={imgStyle}/>
   </Layout>
 );

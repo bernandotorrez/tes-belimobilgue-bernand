@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":  "next build && next start",
+    "dev":  " cross-env NODE_ENV=production && next build && next start",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "start-win": "cross-env NODE_ENV=production node server.js"
