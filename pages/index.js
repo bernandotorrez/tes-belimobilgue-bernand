@@ -119,7 +119,7 @@ class Index extends Component {
   async getNewsData() {
     try {
       
-      const res = await fetch('https://api.nytimes.com/svc/search/v2/articlesearch.json?fl=web_url,headline&fq=section_name:(%22Technology%22)&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa');
+      const res = await fetch('https://api.nytimes.com/svc/search/v2/articlesearch.json?fl=web_url,headline&fq=section_name:("Technology")&api-key=WD9orPN6fmWSYmGjHaZwnZwW79Ca06xa');
       //const res = await fetch('https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=D63Kg6LvRgmGqWlhOInQqrAEFvfQ2FEj');
   
       const data = await res.json();
