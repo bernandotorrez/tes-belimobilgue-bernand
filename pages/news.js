@@ -54,18 +54,24 @@ Post.getInitialProps = async function(context) {
   const show = await res.json();
 
   var show_res = show.response.docs[0]
-  console.log(`Fetched show: ${show_res.headline.main}`);
 
-  var headline = show_res.headline.main;
-  var snippet = show_res.snippet;
-  var paragraph = show_res.lead_paragraph;
+  if(show_res) {
+    var headline = show_res.headline.main;
+    var snippet = show_res.snippet;
+    var paragraph = show_res.lead_paragraph;
+    if(show_res.multimedia == '' || !show_res.multimedia) {
+      var image = 'https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg';
+    } else {
+      var image = `https://static01.nyt.com/${show_res.multimedia[0].url}`;
+    }
+  } else {
+    var headline = 'News not Found'
+    var snippet = ''
+    var paragraph = ''
+  }
   
   // cek apakah ada imagenya atau tidak
-  if(show_res.multimedia == '' || !show_res.multimedia) {
-    var image = 'https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg';
-  } else {
-    var image = `https://static01.nyt.com/${show_res.multimedia[0].url}`;
-  }
+  
 
   return { 
     headline: headline,
